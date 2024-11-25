@@ -54,3 +54,6 @@ Initializes stock details and sets:
 - Computes total value of holdings:  
   \[\text{Current Price} \times \text{Quantity}\]
 
+
+  
+
