@@ -1,0 +1,22 @@
+{
+  "name": "Java Development Environment",
+  "dockerFile": "Dockerfile",
+  "settings": {
+    "java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
+    "java.configuration.runtimes": [
+      {
+        "name": "Java 11",
+        "path": "/usr/lib/jvm/java-11-openjdk-amd64"
+      }
+    ],
+    "java.format.settings.url": "https://raw.githubusercontent.com/redhat-developer/vscode-java/master/formatter.xml"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "redhat.java",
+    "eamodio.gitlens"
+  ],
+  "forwardPorts": [8080],
+  "remoteUser": "vscode",
+  "postCreateCommand": "mvn clean install"
+}
